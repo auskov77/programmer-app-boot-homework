@@ -54,8 +54,8 @@ class CoffeeHouseImplTest {
         System.setOut(new PrintStream(outputStream));
         coffeeHouse.giveOutCoffeeAccordingToPriceList();
 
-        assertEquals("Привет!\n" +
-                "Введите стоимость кофе: Espresso - 5.5, Americano - 7.2, Cappuccino - 8.8\n" +
-                "Ваш кофе: Кофе{Espresso}\n", outputStream.toString());
+        assertEquals("Привет!\r\n" +
+                "Введите стоимость кофе: Espresso - 5.5, Americano - 7.2, Cappuccino - 8.8\r\n" +
+                "Ваш кофе: Кофе{Espresso}\r\n", outputStream.toString());
     }
 }
